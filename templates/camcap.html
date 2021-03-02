@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Face Spoffing Demo</title>
+    <meta charset="utf-8" />
+    <link
+      rel="stylesheet"
+      href="{{ url_for('static', filename='css/main.css') }}"
+    />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <script
+      type="text/javascript"
+      src="{{ url_for('static', filename='javascript/capture.js') }}"
+    
+
+    ></script>
+  </head>
+  <body class="center">
+    <div class="contentarea">
+      <h1>Face Spoffing(i.e Liveness) Detection</h1>
+      <p>This example demonstrates how Live and Image person detected . First Take Picture and Click on Submit Button .</p>
+      <div class="camera">
+        <video id="video">Video stream not available.</video>
+        <!-- take photo -->
+        <button id="take_photo">Take Photo</button>
+        <!-- upload photo -->
+        <input type="file"   name="image_upload" id="file"  style="display: none;">
+        <label id = "upload_photo" for="file" style="cursor: pointer;">Upload Photo</label> 
+        
+        
+        
+      </div> 
+      <canvas id="canvas"> </canvas>
+
+      <div class="output">
+        <img
+          id="photo"
+          name="capture-image"
+          alt="The screen capture will appear in this box."
+        />
+        <button id="submit">Submit</button>
+      
+      </div>
+    </div>
+  </body>
+</html>
