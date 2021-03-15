@@ -86,3 +86,6 @@ $python3.6 app.py
 - `http://localhost:5555/image/`
 
 
+# click 
+
+[Face Detection]https://face-spoofing-demo.herokuapp.com/
